@@ -43,7 +43,9 @@ void particle_respawn_top(Particle *p, const SimState *state);
 bool particle_step(Particle *p, const SimState *state, float dt);
 
 /* Recorre las n particulas llamando particle_step(). Devuelve cuantas se reciclaron
- * en el frame. Version secuencial en src/seq/particle_update.c. */
+ * en el frame. Version secuencial en src/seq/particle_update.c, version
+ * paralela (OpenMP) en src/par/particle_update.c -- misma firma, mismo
+ * particle_step(), solo cambia el loop. */
 int particles_update(Particle *particles, int n, const SimState *state, float dt);
 
 #endif /* PARTICLE_H */

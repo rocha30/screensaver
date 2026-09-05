@@ -6,8 +6,8 @@
 
 /*
  * Loop principal (src/common/app.c). update_fn se pasa como puntero a
- * funcion para que la Etapa 2 (version paralela) reuse este mismo run_app()
- * sin duplicar la logica de juego/render.
+ * funcion para que tanto src/seq/main.c como src/par/main.c reusen este
+ * mismo run_app() sin duplicar la logica de juego/render.
  */
 typedef int (*ParticleUpdateFn)(Particle *particles, int n,
                                  const SimState *state, float dt);
