@@ -33,7 +33,7 @@ void print_usage(const char *prog_name) {
         "  --height H       alto del canvas, minimo %d (default %d)\n"
         "  --fps F          limite de FPS en modo interactivo (default %d)\n"
         "  --frames F        correr exactamente F frames y salir (default: sin limite)\n"
-        "  --threads T        hilos de OpenMP a usar (sin efecto en esta version; default: automatico)\n"
+        "  --threads T        hilos de OpenMP a usar en la version paralela (sin efecto en la secuencial; default: automatico)\n"
         "  --seed S            semilla pseudoaleatoria (default: basada en el reloj)\n"
         "  --season S           spring | summer | autumn | winter | auto (default: auto)\n"
         "  --benchmark           correr sin ventana, solo medir e imprimir tiempos (requiere --frames)\n"
