@@ -5,6 +5,12 @@ Aplica igual a `screensaver_seq` y `screensaver_par`: comparten todo
 `particles_update()` que se les pasa (loop secuencial vs. `#pragma omp
 parallel for`), marcada en el diagrama.
 
+## Versión resumida (imagen, para el informe en PDF)
+
+![Diagrama de flujo](img/anexo1_diagrama_flujo.png)
+
+## Versión detallada (Mermaid, con todas las ramas de validación)
+
 ```mermaid
 flowchart TD
     A([Inicio: main]) --> B["parse_args(argc, argv)\ncaptura de argumentos"]
